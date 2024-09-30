@@ -1,0 +1,56 @@
+-- Autor: Pedro Henrique Chagas Fallgatter
+-- Data: 07/06/2024
+
+Library ieee; 
+use ieee.std_logic_1164.all; 
+
+entity obstaculo is
+	port(
+		en, clk: in STD_LOGIC;
+		a, d, g: out STD_LOGIC
+	);
+end obstaculo;
+
+architecture arquitetura of obstaculo is
+	type ESTADOS is (s0, s1, s2);
+	signal estado: ESTADOS;
+	signal saida: STD_LOGIC_VECTOR(2 downto 0);
+	
+begin
+	process(estado)
+	begin
+		case estado is --0=seg apagado, 1=seg acesso
+			when s0=>
+				saida<="010"; --MEIO
+			when s1=>
+				saida<="100"; --CIMA
+			when s2=>
+				saida<="001"; --BAIXO
+		end case;
+	end process;
+	
+	process(clk)
+	begin
+		if(falling_edge(clk) and en='1') then
+			if(key0='1') then --CIMA
+				case estado is
+					when s0=>estado<=s1;
+					when s1=>estado<=s1;
+					when s2=>estado<=s0;
+				end case;
+			elsif(key1='0') then --BAIXO
+				case estado is
+					when s0=>estado<=s2;
+					when s2=>estado<=s2;
+					when s1=>estado<=s0;
+				end case;
+			end if;
+		end if;
+	end process;
+	
+	
+	a<=saida(2);
+	d<=saida(0);
+	g<=saida(1);
+	
+end arquitetura;

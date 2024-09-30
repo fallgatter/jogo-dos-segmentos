@@ -1,0 +1,144 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 14:17:31  June 06, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		projfinal_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C7G
+set_global_assignment -name TOP_LEVEL_ENTITY projfinal
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:17:31  JUNE 06, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_C14 -to HEX00_PIN_C14
+set_location_assignment PIN_E15 -to HEX01_PIN_E15
+set_location_assignment PIN_C15 -to HEX02_PIN_C15
+set_location_assignment PIN_C16 -to HEX03_PIN_C16
+set_location_assignment PIN_E16 -to HEX04_PIN_E16
+set_location_assignment PIN_D17 -to HEX05_PIN_D17
+set_location_assignment PIN_C17 -to HEX06_PIN_C17
+set_location_assignment PIN_D15 -to HEX07_PIN_D15
+set_location_assignment PIN_C18 -to HEX10_PIN_C18
+set_location_assignment PIN_D18 -to HEX11_PIN_D18
+set_location_assignment PIN_E18 -to HEX12_PIN_E18
+set_location_assignment PIN_B16 -to HEX13_PIN_B16
+set_location_assignment PIN_A17 -to HEX14_PIN_A17
+set_location_assignment PIN_A18 -to HEX15_PIN_A18
+set_location_assignment PIN_B17 -to HEX16_PIN_B17
+set_location_assignment PIN_A16 -to HEX17_PIN_A16
+set_location_assignment PIN_B20 -to HEX20_PIN_B20
+set_location_assignment PIN_A20 -to HEX21_PIN_A20
+set_location_assignment PIN_B19 -to HEX22_PIN_B19
+set_location_assignment PIN_A21 -to HEX23_PIN_A21
+set_location_assignment PIN_B21 -to HEX24_PIN_B21
+set_location_assignment PIN_C22 -to HEX25_PIN_C22
+set_location_assignment PIN_B22 -to HEX26_PIN_B22
+set_location_assignment PIN_A19 -to HEX27_PIN_A19
+set_location_assignment PIN_F21 -to HEX30_PIN_F21
+set_location_assignment PIN_E22 -to HEX31_PIN_E22
+set_location_assignment PIN_E21 -to HEX32_PIN_E21
+set_location_assignment PIN_C19 -to HEX33_PIN_C19
+set_location_assignment PIN_C20 -to HEX34_PIN_C20
+set_location_assignment PIN_D19 -to HEX35_PIN_D19
+set_location_assignment PIN_E17 -to HEX36_PIN_E17
+set_location_assignment PIN_D22 -to HEX37_PIN_D22
+set_location_assignment PIN_F18 -to HEX40_PIN_F18
+set_location_assignment PIN_E20 -to HEX41_PIN_E20
+set_location_assignment PIN_E19 -to HEX42_PIN_E19
+set_location_assignment PIN_J18 -to HEX43_PIN_J18
+set_location_assignment PIN_H19 -to HEX44_PIN_H19
+set_location_assignment PIN_F19 -to HEX45_PIN_F19
+set_location_assignment PIN_F20 -to HEX46_PIN_F20
+set_location_assignment PIN_F17 -to HEX47_PIN_F17
+set_location_assignment PIN_J20 -to HEX50_PIN_J20
+set_location_assignment PIN_K20 -to HEX51_PIN_K20
+set_location_assignment PIN_L18 -to HEX52_PIN_L18
+set_location_assignment PIN_N18 -to HEX53_PIN_N18
+set_location_assignment PIN_M20 -to HEX54_PIN_M20
+set_location_assignment PIN_N19 -to HEX55_PIN_N19
+set_location_assignment PIN_N20 -to HEX56_PIN_N20
+set_location_assignment PIN_L19 -to HEX57_PIN_L19
+set_location_assignment PIN_B8 -to KEY0_PIN_B8
+set_location_assignment PIN_A7 -to KEY1_PIN_A7
+set_location_assignment PIN_A8 -to LEDR0_PIN_A8
+set_location_assignment PIN_A9 -to LEDR1_PIN_A9
+set_location_assignment PIN_A10 -to LEDR2_PIN_A10
+set_location_assignment PIN_B10 -to LEDR3_PIN_B10
+set_location_assignment PIN_D13 -to LEDR4_PIN_D13
+set_location_assignment PIN_C13 -to LEDR5_PIN_C13
+set_location_assignment PIN_E14 -to LEDR6_PIN_E14
+set_location_assignment PIN_D14 -to LEDR7_PIN_D14
+set_location_assignment PIN_A11 -to LEDR8_PIN_A11
+set_location_assignment PIN_B11 -to LEDR9_PIN_B11
+set_location_assignment PIN_P11 -to MAX10_CLK1_50_PIN_P11
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_C10 -to SW0_PIN_C10
+set_location_assignment PIN_C11 -to SW1_PIN_C11
+set_location_assignment PIN_D12 -to SW2_PIN_D12
+set_location_assignment PIN_C12 -to SW3_PIN_C12
+set_location_assignment PIN_A12 -to SW4_PIN_A12
+set_location_assignment PIN_B12 -to SW5_PIN_B12
+set_location_assignment PIN_A13 -to SW6_PIN_A13
+set_location_assignment PIN_A14 -to SW7_PIN_A14
+set_location_assignment PIN_B14 -to SW8_PIN_B14
+set_location_assignment PIN_F15 -to SW9_PIN_F15
+set_global_assignment -name VHDL_FILE src/Timing_Reference.vhd
+set_global_assignment -name BDF_FILE src/SIPO.bdf
+set_global_assignment -name BDF_FILE src/seg.bdf
+set_global_assignment -name BDF_FILE src/projfinal.bdf
+set_global_assignment -name VHDL_FILE src/pontos.vhd
+set_global_assignment -name QIP_FILE src/pontos.qip
+set_global_assignment -name VHDL_FILE src/personagem.vhd
+set_global_assignment -name VHDL_FILE src/obstaculo.vhd
+set_global_assignment -name VHDL_FILE src/nome.vhd
+set_global_assignment -name QIP_FILE src/nome.qip
+set_global_assignment -name VHDL_FILE src/maiorigual.vhd
+set_global_assignment -name BDF_FILE src/displaymenu.bdf
+set_global_assignment -name BDF_FILE src/debounce.bdf
+set_global_assignment -name VHDL_FILE src/counter.vhd
+set_global_assignment -name VHDL_FILE src/clk.vhd
+set_global_assignment -name BDF_FILE src/9upsynchronouscounter.bdf
+set_global_assignment -name BDF_FILE src/2upcounter.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

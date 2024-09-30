@@ -1,0 +1,60 @@
+-- Autor: Pedro Henrique Chagas Fallgatter
+-- Data: 06/06/2024
+
+Library ieee; 
+use ieee.std_logic_1164.all; 
+
+entity personagem is
+	port(
+		en, key0, key1: in STD_LOGIC;
+		a, b, c, d, e, f, g: out STD_LOGIC
+	);
+end personagem;
+
+architecture arquitetura of personagem is
+	type ESTADOS is (s0, s1, s2);
+	signal estado: ESTADOS;
+	signal saida: STD_LOGIC_VECTOR(2 downto 0);
+	
+begin
+	process(en)
+		if(en=1)
+			process(estado)
+			begin
+				case estado is
+					when s0=>
+						saida<="010";
+					when s1=>
+						saida<="100";
+					when s2=>
+						saida<="001";
+				end case;
+			end process;
+					
+			process(key0, key1)
+			begin
+				if(key0=1 and key1=0) then
+					case estado is
+						when s0=>estado<=s1;
+						when s1=>estado<=s1;
+						when s2=>estado<=s0;
+				end if
+				if(key0=0 and key1=1) then
+					case estado is
+						when s0=>estado<=s2;
+						when s2=>estado<=s2;
+						when s1=>estado<=s0;
+				end if;
+			end process;
+		end if;
+	end process;
+
+	a<=saida(0);
+	b<='0';
+	c<='0';
+	d<=saida(2);
+	e<='0';
+	f<='0';
+	g<=saida(1);
+	
+end arquitetura;
