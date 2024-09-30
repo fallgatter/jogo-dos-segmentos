@@ -11,7 +11,7 @@ Após executado o upload, o usuário encontrará um menu dispondo das opções d
 Tendo ao menos uma pontuação registrada, o usuário pode acessar o menu de "Pontos", e ciclar entre as pontuações registradas utilizando o botão inferior ou retornar ao menu utilizando o botão superior.
 
 ## Vídeo de Demonstração / Showcase Video
-Como parte do projeto, um vídeo demonstrando o funcionamento foi requisitado. Você pode assistir a ele clicando [aqui](https://youtu.be/s7nQkjjwEOE?si=oPecUvUWsH8xh60_).
+Como parte do projeto, um vídeo demonstrando o funcionamento e explicando o projeto foi requisitado. Você pode assistir a ele clicando [aqui](https://youtu.be/s7nQkjjwEOE?si=oPecUvUWsH8xh60_).
 
 ## Contato
 E-mail: fallgatter@alunos.utfpr.edu.br
